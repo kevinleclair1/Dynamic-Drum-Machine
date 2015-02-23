@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Sound thing</title>
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+</head>
+<body>
+	<section class="howTo">
+		<div class="howToWrapper clearfix">
+			<div class="howToCol howToColumn1">
+				<p class="faLrg"><i class="fa fa-search"></i></p>
+				<h4>Search for Sounds</h4>
+				<p class='howToInfo'>Type the kind of sound you want to look for in the search bar.  You can filter through sounds based on length as well.</p>
+			</div>
+			<div class="howToCol howToColumn2">
+				<p class="faLrg"><i class="fa fa-music"></i></p>
+				<h4>Have Fun!</h4>
+				<p class='howToInfo'>Click on a pad to play a sound or use your keyboard! QWERTY for the top row and ASDFG for the bottom.</p>
+			</div>
+			<div class="howToCol howToColumn3">
+				<p class="faLrg"><i class="fa fa-link"></i></p>
+				<h4>Download</h4>
+				<p class='howToInfo'>Click on the link tab beneath the pad to be directed to the download url.</p>
+			</div>
+			<i class="fa fa-times-circle"></i>
+		</div>
+	</section>
+	<header class='hero clearfix'>
+		<video src="api project vid.webmsd.webm" autoplay loop></video>
+		<div class='headerWrapper'>
+			<h1>Dynamic Drum Machine</h1>
+			<h2>Find new sounds, one search at a time</h2>
+			<button class="howToToggle">How it works</button>
+		</div>
+		<div class="formWrapper">
+			<form class="searchForm clearfix">
+				<input type="text" class="searchWord" id="searchWord" required='true' placeholder='Search here'>
+				<input type="text" class="minLength" placeholder='Min Length in Secs'>
+				<input type="text" class="maxLength" placeholder='Max Length in Secs'>
+				<input type="submit" class="submit">
+			</form>
+		</div>
+	</header>
+	<div class="overlay">
+		<div class="loadWrapper">
+			<span class="icon speaker"></span>
+		</div>
+	</div>
+	<div class="gridWrapper clearfix">
+		<div class="onoffswitch">
+		    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
+		    <label class="onoffswitch-label" for="myonoffswitch">
+		        <span class="onoffswitch-inner"></span>
+		        <span class="onoffswitch-switch"></span>
+		    </label>
+		</div>
+		<h3>Keyboard Control</h3>
+		<div class="grid clearfix">
+		</div>
+		<button class='stop'>
+			<i class="fa fa-stop"></i>
+		</button>
+	</div>
+	<footer>
+		<p>Made with <i class="fa fa-heart"></i> by <a href="http://kevinleclair.ca">Kevin LeClair</a> with the <a href="http://freesound.org">Freesound.org</a> API</p>
+	</footer>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="main.js"> </script>
+</body>
+</html>

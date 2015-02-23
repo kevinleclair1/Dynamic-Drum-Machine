@@ -1,0 +1,112 @@
+.icon{
+	position:absolute;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	margin:auto;
+	display:block;
+}
+
+/*THE ARTIFAKT ;) */
+.speaker{
+	width:0; 
+	height:0;
+	background:none;
+	border-top:4em solid transparent;
+	border-bottom:4em solid transparent; 
+	border-right:5em solid #fff;
+	
+}
+.speaker:before{
+	content:"";
+	position:absolute;
+	top:-1.3em;
+	left:0;
+	width:5.8em;
+	height:2.5em;
+	background:#fff;
+	border-radius:3px 1.5em 1.5em 3px;
+}
+.speaker:after{
+	content:"";
+	position:absolute;
+	border-right:0.5em solid #fff;
+	border-radius:50%;
+	/*animation*/
+	-webkit-animation:pump 0.1s 0.1s infinite alternate;
+	   -moz-animation:pump 0.1s 0.1s infinite alternate;
+	    -ms-animation:pump 0.1s 0.1s infinite alternate;
+	     -o-animation:pump 0.1s 0.1s infinite alternate;
+	        animation:pump 0.1s 0.1s infinite alternate;
+}
+@-webkit-keyframes pump {
+    from{
+    	top:-1.4em;
+		right:-7em;
+		width:2.5em;
+		height:2.5em;
+	}
+    to{
+    	top:-1.8em;
+		right:-8em;
+		width:3.5em;
+		height:3.5em;
+    }
+}
+@-moz-keyframes pump {
+    from{
+    	top:-1.4em;
+		right:-7em;
+		width:2.5em;
+		height:2.5em;
+	}
+    to{
+    	top:-1.8em;
+		right:-8em;
+		width:3.5em;
+		height:3.5em;
+    }
+}
+@-ms-keyframes pump {
+    from{
+    	top:-1.4em;
+		right:-7em;
+		width:2.5em;
+		height:2.5em;
+	}
+    to{
+    	top:-1.8em;
+		right:-8em;
+		width:3.5em;
+		height:3.5em;
+    }
+}
+@-o-keyframes pump {
+    from{
+    	top:-1.4em;
+		right:-7em;
+		width:2.5em;
+		height:2.5em;
+	}
+    to{
+    	top:-1.8em;
+		right:-8em;
+		width:3.5em;
+		height:3.5em;
+    }
+}
+@keyframes pump {
+	from{
+    	top:-1.4em;
+		right:-7em;
+		width:2.5em;
+		height:2.5em;
+	}
+    to{
+    	top:-1.8em;
+		right:-8em;
+		width:3.5em;
+		height:3.5em;
+    }
+}
