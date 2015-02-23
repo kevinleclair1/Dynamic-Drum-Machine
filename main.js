@@ -25,7 +25,6 @@ app.init = function(){
 		  //when the animation is finished - do thi
 		  $(this).removeClass('animated pulse');
 		  console.log('we removed the class');
-		  //random comment for git
 		});
 	});
 
