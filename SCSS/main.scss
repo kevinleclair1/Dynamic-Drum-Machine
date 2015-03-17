@@ -13,6 +13,8 @@ header {
 	overflow: hidden;
 	video {
 		width: 100%;
+		object-fit: cover;
+		height: 100%;
 	}
 }
 .headerWrapper {
@@ -120,6 +122,15 @@ header {
 	top: 0;
 	width: 100%;
 	height: 100%;
+	p {
+		color: white;
+		text-align: center;
+		position: absolute;
+		top: 35%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		font-size: 30px;
+	}
 }
 .sample {
 	width: 100%;

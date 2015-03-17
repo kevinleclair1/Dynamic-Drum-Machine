@@ -12,7 +12,6 @@ app.init = function(){
 	$('.searchForm').on('submit', function(e){
 		e.preventDefault();
 		var searchWord = $('.searchWord').val();
-		console.log(searchWord);
 		app.getResults(searchWord);
 	});
 	$('.grid').on('click','.pad',function(){
@@ -24,13 +23,11 @@ app.init = function(){
 		$(this).addClass('animated pulse').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
 		  //when the animation is finished - do thi
 		  $(this).removeClass('animated pulse');
-		  console.log('we removed the class');
 		});
 	});
 
 	$(window).on('keydown',function(e){
 		if(!($('.onoffswitch-checkbox').is(':checked'))) {
-			console.log("It's not checked, so don't play any sound");
 			return; // stops the rest of the function from running
 		}
 			
@@ -44,11 +41,9 @@ app.init = function(){
 			var audio = $('.pad').eq(keyIndex).find('audio')[0];
 			audio.currentTime = 0;
 			audio.play();
-			console.log('sound played');
 			padSelect.addClass('animated pulse').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
 			  //when the animation is finished - do thi
 			  padSelect.removeClass('animated pulse');
-			  console.log('we removed the class');
 			});
 		}
 	});
@@ -87,7 +82,6 @@ app.getResults = function(i){
 			for (var i = 0; i < 12; i++) {
 				var resultNumber = (app.randomNumber(results));
 				var soundId = results[resultNumber].id;
-				console.log(soundId);
 				soundIds.push(soundId);	
 			};
 			$('.grid').empty();
